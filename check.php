@@ -13,6 +13,8 @@
     $name=$row['username'];
     }
 
+
+    
     if(isset($name)){
             echo '<form action="form.php" method="post"></form>';
     
