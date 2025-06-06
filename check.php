@@ -10,16 +10,15 @@
     
     $sql->execute([$_POST['username'],$_POST['password']]);
     foreach($sql as $row){
-    $name=$row['user_name'];
+    $name=$row['username'];
     }
 
     if(isset($name)){
             echo '<form action="form.php" method="post"></form>';
     
 }else{
-    echo 'EmailかPasswordが違います';
+    echo 'usernameかPasswordが違います';
     }
 
     $pdo=null;
-    echo '<br>DB_CLOSE <br>';
     ?>
